@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+@font-face {
+    font-family: chinese;
+    src: url(chinese.ttf);
+}
+
+html,body{
+    height:100%;
+}
+
+
+#intro {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 99999;
+  }
+
+
+
+#bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url(sky/sky.jpg) no-repeat center center;
+	background-size: cover;
+  }
+
+.main
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	color: yellow;
+	z-index: 99998;
+	font-size: 5rem;
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main h1
+{
+	margin-right: 40px;
+	font-family: chinese;
+}
+
+.main img
+{
+	width: 20%;
+}
+
+
+  :root {
+	--dark-bg: rgba(15, 15, 15, 0.95);
+	--light-bg: rgba(15, 15, 15, 0.95);
+	--spacing: 350px;
+  
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+  }
+  
+  
+  main {
+	width: 100vw;
+	color: white;
+	z-index: 99;
+	position: absolute;
+	width: 100%;
+	margin: 0px auto;
+	padding: 120px 0px;
+	
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+  }
+  
+  header {
+	background: var(--dark-bg);
+	grid-column: 2 / span 5;
+	font-size: 2.5rem;
+	padding: 2rem;
+	margin-bottom: var(--spacing);
+	width:fit-content;
+  }
+  
+  section {
+	grid-column: 2 / 8;
+	padding: 1rem;
+	background: var(--dark-bg);
+	font-size: 1.25rem;
+	line-height: 1.5;
+	margin-bottom: var(--spacing);
+  }
+  
+  blockquote {
+	margin: 0;
+	padding: 0;
+	grid-column: 2 / span 9;
+	margin-bottom: var(--spacing);
+  }
+  
+  blockquote p {
+	color: black;
+	background-color: white;
+	font-size: 4rem;
+	display: inline;
+  }
+  
+  .left {
+	grid-column: 6 / 12;
+  }
+  
+  section p
+  { 
+	 font-size: medium;
+  }
