@@ -41,13 +41,30 @@ html,body{
 	color: yellow;
 	z-index: 99998;
 	font-size: 5rem;
-	padding: 2rem;
+	padding: 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.main h1
+.chapter
+{
+	position: relative;
+	width: 337%;
+	height: 86%;
+	left: -1165px;
+	bottom: -1000px;
+	background-color: red;
+	color: yellow;
+	z-index: 99998;
+	font-size: 3rem;
+	padding: 0px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1
 {
 	margin-right: 40px;
 	font-family: chinese;
@@ -71,7 +88,7 @@ html,body{
   }
   
   
-  main {
+main {
 	width: 100vw;
 	color: white;
 	z-index: 99;
@@ -90,16 +107,17 @@ html,body{
 	font-size: 2.5rem;
 	padding: 2rem;
 	margin-bottom: var(--spacing);
-	width:fit-content;
+	width:max-content;
   }
   
-  section {
+  .section {
 	grid-column: 2 / 8;
 	padding: 1rem;
 	background: var(--dark-bg);
 	font-size: 1.25rem;
 	line-height: 1.5;
 	margin-bottom: var(--spacing);
+	width:max-content;
   }
   
   blockquote {
@@ -107,6 +125,7 @@ html,body{
 	padding: 0;
 	grid-column: 2 / span 9;
 	margin-bottom: var(--spacing);
+	width:max-content;
   }
   
   blockquote p {
@@ -124,3 +143,5 @@ html,body{
   { 
 	 font-size: medium;
   }
+
+  #faklyaMap { height: 500px; width: 500px; margin: auto;}
